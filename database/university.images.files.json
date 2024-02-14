@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "65b8fb5c0d3e41e8193a6ab1"
+  },
+  "length": 3436,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-30T13:36:28.371Z"
+  },
+  "filename": "avatar-male.png",
+  "contentType": "image/png"
+},
+{
+  "_id": {
+    "$oid": "65b8fb670d3e41e8193a6ab9"
+  },
+  "length": 16501,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-30T13:36:39.361Z"
+  },
+  "filename": "businessman-avatar.png",
+  "contentType": "image/png"
+},
+{
+  "_id": {
+    "$oid": "65b8fb700d3e41e8193a6abf"
+  },
+  "length": 3436,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-30T13:36:48.337Z"
+  },
+  "filename": "avatar-male.png",
+  "contentType": "image/png"
+},
+{
+  "_id": {
+    "$oid": "65b8fc4cb43d2b814a8a1337"
+  },
+  "length": 47847,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-30T13:40:28.447Z"
+  },
+  "filename": "avatar-guy.png",
+  "contentType": "image/png"
+},
+{
+  "_id": {
+    "$oid": "65b8fd5ab43d2b814a8a134e"
+  },
+  "length": 66801,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-30T13:44:58.503Z"
+  },
+  "filename": "women-business.jpg",
+  "contentType": "image/jpeg"
+},
+{
+  "_id": {
+    "$oid": "65ba0c09d6881b6778bbaa59"
+  },
+  "length": 21331,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-31T08:59:53.010Z"
+  },
+  "filename": "female-avatar.jpg",
+  "contentType": "image/jpeg"
+},
+{
+  "_id": {
+    "$oid": "65ba0c20d6881b6778bbaa68"
+  },
+  "length": 58746,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-31T09:00:16.029Z"
+  },
+  "filename": "carolus-31190085.jpg",
+  "contentType": "image/jpeg"
+},
+{
+  "_id": {
+    "$oid": "65ba0d0ad6881b6778bbaa8d"
+  },
+  "length": 3436,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-31T09:04:10.952Z"
+  },
+  "filename": "avatar-male.png",
+  "contentType": "image/png"
+},
+{
+  "_id": {
+    "$oid": "65ba58038e501dd7e0a7b26c"
+  },
+  "length": 16501,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-31T14:24:03.805Z"
+  },
+  "filename": "businessman-avatar.png",
+  "contentType": "image/png"
+},
+{
+  "_id": {
+    "$oid": "65ba59649ab3c783e112ab72"
+  },
+  "length": 47847,
+  "chunkSize": 1048576,
+  "uploadDate": {
+    "$date": "2024-01-31T14:29:56.112Z"
+  },
+  "filename": "avatar-guy.png",
+  "contentType": "image/png"
+}]

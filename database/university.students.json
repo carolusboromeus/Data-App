@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "65b8b327010bbae003f17694"
+  },
+  "nama": "Carolus Boromeus",
+  "noHP": "0855916916339",
+  "email": "carolusboromeus05@gmail.com",
+  "nim": 31190085,
+  "jurusan": "Sistem Informasi",
+  "semester": 8,
+  "idFoto": "65ba0c20d6881b6778bbaa68",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-30T08:28:23.118Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T09:00:16.026Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b8dd44c4f8ed10cd1fd827"
+  },
+  "nama": "Juan Astra",
+  "noHP": "0855123543543",
+  "email": "juanastra@gmail.com",
+  "nim": 10220010,
+  "jurusan": "Hospitality & Pariwisata",
+  "semester": 4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-30T11:28:04.410Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-30T13:36:28.368Z"
+  },
+  "idFoto": "65b8fb5c0d3e41e8193a6ab1"
+},
+{
+  "_id": {
+    "$oid": "65b8e9a67ac4bf432ffda4e0"
+  },
+  "nama": "Yonatan Hokianto",
+  "noHP": "085545278123",
+  "email": "yonatanhokianto@gmail.com",
+  "nim": 21190043,
+  "jurusan": "Teknik Informatika",
+  "semester": 8,
+  "idFoto": "65b8fb670d3e41e8193a6ab9",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-30T12:20:54.536Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T08:59:07.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b8f574e8e6f3fec02cbb46"
+  },
+  "nama": "Malvin Adrianus",
+  "noHP": "088691853481",
+  "email": "malvinadrianus@gmail.com",
+  "nim": 31190013,
+  "jurusan": "Sistem Informasi",
+  "semester": 8,
+  "idFoto": "65b8fb700d3e41e8193a6abf",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-30T13:11:16.295Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T14:24:45.649Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65ba0cecd6881b6778bbaa78"
+  },
+  "nama": "Andryan",
+  "noHP": "0822822311274",
+  "email": "andryan@gmail.com",
+  "nim": 10210040,
+  "jurusan": "Hospitality & Pariwisata",
+  "semester": 4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-31T09:03:40.380Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T09:04:10.950Z"
+  },
+  "idFoto": "65ba0d0ad6881b6778bbaa8d"
+},
+{
+  "_id": {
+    "$oid": "65ba57ca2394005b5cd8998f"
+  },
+  "nama": "Kelvin Wijaya",
+  "noHP": "0822452556781",
+  "email": "kelvinwijaya@gmail.com",
+  "nim": 51190014,
+  "jurusan": "Desain Interaktif",
+  "semester": 8,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-31T14:23:06.459Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T14:24:09.847Z"
+  },
+  "idFoto": "65ba58038e501dd7e0a7b26c"
+}]

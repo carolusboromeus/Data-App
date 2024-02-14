@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "65b7dec1f013eb8040c6b737"
+  },
+  "nama": "Alicia Veronica",
+  "noHP": "0877523815586",
+  "email": "aliciaveronica@gmail.com",
+  "nitk": 882407865,
+  "programStudi": "Psikologi",
+  "idFoto": "65ba0c09d6881b6778bbaa59",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-29T17:22:09.375Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T08:59:53.007Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b8fc4cb43d2b814a8a1338"
+  },
+  "nama": "Budi Setiawan",
+  "noHP": "088445982901",
+  "email": "budisetiawan@gmail.com",
+  "nitk": 880275610,
+  "programStudi": "Manajamen",
+  "idFoto": "65b8fc4cb43d2b814a8a1337",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-30T13:40:28.436Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T09:05:06.823Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b8fd48b43d2b814a8a1341"
+  },
+  "nama": "Agustina Andriani",
+  "noHP": "082893872819",
+  "email": "agustinaadndriani@gmail.com",
+  "nitk": 880072877,
+  "programStudi": "Sistem Informasi",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-30T13:44:40.325Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-30T13:44:58.500Z"
+  },
+  "idFoto": "65b8fd5ab43d2b814a8a134e"
+},
+{
+  "_id": {
+    "$oid": "65ba59649ab3c783e112ab73"
+  },
+  "nama": "Hermawan Santoso",
+  "noHP": "082328616095",
+  "email": "hermawansantoso@gmail.com",
+  "nitk": 881963844,
+  "programStudi": "Data Science",
+  "idFoto": "65ba59649ab3c783e112ab72",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-01-31T14:29:56.104Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-31T14:29:56.104Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65bc6d8e86a06c7b8fa15802"
+  },
+  "nama": "Febrian Yukinto",
+  "noHP": "083289529529",
+  "email": "febrianyukinto@gmail.com",
+  "nitk": 882844073,
+  "programStudi": "Desain Interaktif",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-02-02T04:20:30.605Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T04:20:30.605Z"
+  }
+}]
