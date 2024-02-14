@@ -1,0 +1,33 @@
+<h6 class="mb-3 p-3 bg-info bg-opacity-10 border border-primary border-start-0 rounded-end">Detail Dosen</h6>
+<% if (!dosen) { %>
+    <div class="alert alert-danger fw-bold" role="alert">
+        Data dosen tidak ada. <br> <a href="/dosen" class="alert-link fw-normal">&laquo; kembali ke daftar dosen</a>
+    </div>
+<% } else { %>
+<div class="card" style="width: 30rem;">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <% if (!image) { %>
+                    <img src="/img/profile-icon.jpg" class="img-fluid img-thumbnail rounded float-start">
+                <% } else { %>
+                    <img src="data:image/png;base64,<%=image.data.toString('base64')%>" class="img-fluid img-thumbnail rounded float-start">
+                <% } %>
+            </div>
+            <div class="col-md-8 pt-2">
+                <h5 class="card-title"><%= dosen.nama %></h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary"><%= dosen.nitk %></h6>
+                <p class="card-text"><%= dosen.programStudi %></p>
+                <p class="card-text"><%= dosen.noHP %></p>
+                <p class="card-text"><%= dosen.email %></p>
+                <a href="/dosen/edit/<%= dosen.nitk %>" class="btn badge roundel-pill bg-info">Ubah</a>
+                <form action="/dosen?_method=DELETE" method="POST" class="d-inline">
+                    <input type="hidden" name="nitk" value="<%= dosen.nitk %>">
+                    <button type="submit" class="btn badge roundel-pill bg-danger" onclick="return confirm('Yakin hapus data Dosen ini?')">Hapus</button>
+                </form>
+                <a href="/dosen" class="card-link d-block mt-3">&laquo; Kembali ke daftar dosen</a>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>

@@ -1,0 +1,40 @@
+<h6 class="p-3 bg-info bg-opacity-10 border border-primary border-start-0 rounded-end">Data Dosen</h6>
+<a href="/dosen/add" class="btn btn-primary mb-2 mt-2">Tambah Data Dosen</a>
+
+<% if (msg.length !== 0) { %>
+    <div class="alert alert-success" role="alert">
+        <%= msg %>
+    </div>
+<% } %>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">NITK</th>
+        <th scope="col">Nama</th>
+        <th scope="col">Program Studi</th>
+        <th scope="col">Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if (dosen.length ===0) { %>
+            <tr>
+                <td colspan="5">
+                    <div class="alert alert-danger fw-bold" role="alert"> Data Dosen masih kosong.</div>
+                </td>
+            </tr>
+        <% } %>
+        <% dosen.forEach((ds,i) => { i++ %>
+            <tr>
+                <th scope="row"><%= i %></th>
+                <td><%= ds.nitk %></td>
+                <td><%= ds.nama %></td>
+                <td><%= ds.programStudi %></td>
+                <td><a href="/dosen/<%= ds.nitk %>" class="btn btn-primary inline-block">Details</a></td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
+
+

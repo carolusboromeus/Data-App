@@ -1,0 +1,65 @@
+<h6 class="p-3 bg-info bg-opacity-10 border border-primary border-start-0 rounded-end">Form Tambah Data Mahasiswa</h6>
+<div class="row">
+    <div class="col-md-6">
+        
+
+        <% if (typeof errors != 'undefined') { %>
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    <% errors.forEach(error => { %>
+                        <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } %>
+
+        <form method="post" enctype="multipart/form-data" action="/mahasiswa" autocomplete="off">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama:</label>
+                <input type="text" class="form-control" id="nama" name="nama" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="noHP" class="form-label">Nomor HP:</label>
+                <input type="text" class="form-control" id="noHP" name="noHP" required>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="nim" class="form-label">NIM:</label>
+                        <input type="number" class="form-control" id="nim" name="nim" min="0" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="semester" class="form-label">Semester:</label>
+                        <input type="number" class="form-control" id="semester" name="semester" min="1" value="1" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="jurusan" class="form-label">Jurusan:</label>
+                        <select id="jurusan" class="form-select" name="jurusan" required>
+                            <% programStudi.forEach((ps,i) => { %>
+                                <option value="<%= ps.jurusan %>"><%= ps.jurusan %></option>
+                            <% }) %>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="foto" class="form-label">Foto:</label>
+                        <input type="file" class="form-control" id="foto" name="foto">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Tambah Data Mahasiswa</button>
+            <a href="/mahasiswa" class="btn btn-secondary inline-block">Kembali</a>
+        </form>
+    </div>
+</div>

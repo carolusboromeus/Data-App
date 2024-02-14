@@ -1,0 +1,72 @@
+<h6 class="p-3 bg-info bg-opacity-10 border border-primary border-start-0 rounded-end">Form Ubah Data Dosen</h6>
+<div class="row">
+    <div class="col-md-6">
+        
+
+        <% if (typeof errors != 'undefined') { %>
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    <% errors.forEach(error => { %>
+                        <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } %>
+
+        <form method="post" enctype="multipart/form-data" action="/dosen/?_method=PUT" autocomplete="off">
+            <input type="hidden" name="_id" value="<%= dosen.id %>">
+            <input type="hidden" name="nitk" value="<%= dosen.nitk %>">
+            <div class="row">
+                <div class="col-md-4">
+                    <% if (!image) { %>
+                        <input type="hidden" name="idFile">
+                        <img src="/img/profile-icon.jpg" class="img-fluid img-thumbnail rounded float-start mt-2 mb-2" id="output">
+                    <% } else { %>
+                        <input type="hidden" name="idFile" value="<%= image.files_id %>">
+                        <input type="hidden" name="nameFile" value="<%= image.name %>">
+                        <img src="data:image/png;base64,<%=image.data.toString('base64')%>" class="img-fluid img-thumbnail rounded float-start mt-2 mb-2" id="output">
+                    <% } %>
+                    <div class="pt-3">
+                        <input type="file" class="form-control mt-3" id="foto" name="foto" onchange="loadFile(event)">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="mb-3">
+                      <label for="nama" class="form-label">Nama:</label>
+                      <input type="text" class="form-control" id="nama" name="nama" required value="<%= dosen.nama %>">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" name="email" value="<%= dosen.email %>">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Nomor HP:</label>
+                      <input type="text" class="form-control" id="noHP" name="noHP" required value="<%= dosen.noHP %>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="jurusan" class="form-label">Program Studi:</label>
+                        <select id="jurusan" class="form-select" name="jurusan" required>
+                            <% programStudi.forEach((ps,i) => { %>
+                                <% if (dosen.programStudi == ps.jurusan) { %>
+                                    <option value="<%= ps.jurusan %>" selected> <%= ps.jurusan %> </option>
+                                <% } else if(dosen.programStudi != ps.jurusan) { %>
+                                    <option value="<%= ps.jurusan %>"><%= ps.jurusan %></option>
+                                <% } %>
+                            <% }) %>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mt-2">
+                <button type="submit" class="btn btn-primary">Ubah Data Dosen</button>
+                <a href="/dosen/<%= dosen.nitk %>" class="btn btn-secondary inline-block">Kembali</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    const loadFile = function (event) {
+        const image = document.getElementById("output");
+        image.src = URL.createObjectURL(event.target.files[0]);
+      };
+</script>

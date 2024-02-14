@@ -1,0 +1,102 @@
+<h6 class="p-3 mb-3 bg-info bg-opacity-10 border border-primary border-start-0 rounded-end">Dashboard</h6>
+<div class="row mb-3">
+    <div class="col-6 col-lg-3 col-md-6">
+        <div class="bg-body-secondary rounded">
+            <div class="row p-3 ms-1">
+                <div class="col-md-2 text-center pt-1 border rounded bg-primary bg-gradient">
+                    <h2 class="bi bi-file-earmark-text-fill text-light"></h2>
+                </div>
+                <div class="col-md">
+                    <h6>Total Data:</h6>
+                    <b><%= mahasiswa + dosen %></b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-lg-3 col-md-6">
+        <div class="bg-body-secondary rounded">
+            <div class="row p-3 ms-1">
+                <div class="col-md-2 text-center pt-1 border rounded bg-primary bg-gradient">
+                    <h2 class="bi bi-file-earmark-text-fill text-light"></h2>
+                </div>
+                <div class="col-md-8">
+                    <h6>Data Mahasiswa:</h6>
+                    <b><%= mahasiswa %></b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-lg-3 col-md-6">
+        <div class="bg-body-secondary rounded">
+            <div class="row p-3 ms-1">
+                <div class="col-md-2 text-center pt-1 border rounded bg-primary bg-gradient">
+                    <h2 class="bi bi-file-earmark-text-fill text-light"></h2>
+                </div>
+                <div class="col-md">
+                    <h6>Data Dosen:</h6>
+                    <b><%= dosen %></b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h6 class="p-3 mb-3 bg-info bg-opacity-10 rounded">Jumlah Mahasiswa & Dosen</h6>
+<div class="container">
+    <div id="chart"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const options = {
+        series: [{
+            name: 'Mahasiswa',
+            data: <%- JSON.stringify(countMhs) %>
+        },{
+            name: 'Dosen',
+            data: <%- JSON.stringify(countDsn) %>
+        }],
+        chart: {
+            type: 'bar',
+            height: 650
+        },
+        plotOptions: {
+            bar: {
+              horizontal: true,
+              columnWidth: '55%',
+              endingShape: 'rounded'
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            show: true,
+            width: 2,
+            colors: ['transparent']
+        },
+        xaxis: {
+            categories: <%- JSON.stringify(jurusan) %>,
+        },
+        yaxis: {
+            title: {
+                text: 'Jumlah'
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return val + " orang"
+                }
+            }
+        },
+        theme: {
+            mode: 'light',
+            palette: 'palette6'
+        }
+    };
+      
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+      
+      chart.render();
+</script>
